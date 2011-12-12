@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  
+  <Identity Name="124a0ae9-0a19-4fba-842f-618d18105987"
+            Publisher="CN=elnino"
+            Version="1.0.0.0" />
+  
+  <Properties>
+    <DisplayName>PlatformQuiz</DisplayName>
+    <PublisherDisplayName>elnino</PublisherDisplayName>
+    <Logo>StoreLogo.png</Logo>
+    <Description>PlatformQuiz</Description>
+  </Properties>
+  
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+  
+  <Resources>
+    <Resource Language="en-us"/>
+  </Resources>
+  
+  <Applications>
+    <Application Id="App" 
+        Executable="platformquiz.exe" 
+        EntryPoint="PlatformQuiz.App">
+        <VisualElements 
+            DisplayName="PlatformQuiz"
+            Logo="Logo.png"
+            SmallLogo="SmallLogo.png"
+            Description="PlatformQuiz"
+            ForegroundText="light"
+            BackgroundColor="#222222">
+            <SplashScreen Image="SplashScreen.png" />
+        </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

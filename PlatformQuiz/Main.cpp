@@ -4,6 +4,7 @@
 [Platform::MTAThread]
 int main(array<Platform::String^>^)
 {
-    auto viewProvider = ref new ViewProviderFactory();
-    Windows::ApplicationModel::Core::CoreApplication::Run(viewProvider);
+    auto viewProviderFactory = ref new Direct3DTutorialViewProviderFactory();
+    Windows::ApplicationModel::Core::CoreApplication::Run(viewProviderFactory);
+    return 0;
 }
